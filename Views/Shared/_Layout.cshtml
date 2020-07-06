@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+		<meta charset="utf-8" />
+		<link rel="shortcut icon" href="https://CsharpExplorer.com.br/favicon.ico" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no" />
+		<meta name="theme-color" content="#000000" />
+		<meta
+			name="keywords"
+			content="c#, csharp, dotnet core, dotnet core 3.1"
+		/>
+		<meta
+			name="description"
+			content="CsharpExplorer: Encontre os comandos c# certos de que você precisa, sem procurar na Web!"
+		/>
+		<meta name="pagename" content="CsharpExplorer: Encontre os comandos c# certos de que você precisa, sem procurar na Web!" />
+		<meta name="url" content="https://CsharpExplorer.com.br" />
+		<!-- Google / Search Engine Tags -->
+		<meta itemprop="name" content="CsharpExplorer" />
+		<meta
+			itemprop="description"
+			content="CsharpExplorer: Encontre os comandos c# certos de que você precisa, sem procurar na Web!"
+		/>
+		<!-- Facebook Meta Tags -->
+		<meta property="og:url" content="https://CsharpExplorer.com.br" />
+		<meta property="og:type" content="website" />
+		<meta property="og:title" content="CsharpExplorer" />
+		<meta
+			property="og:description"
+			content="CsharpExplorer: Encontre os comandos c# certos de que você precisa, sem procurar na Web!"
+		/>
+		<meta property="og:image:height" content="630" />
+		<meta property="og:image:width" content="1200" />
+		<meta property="og:locale" content="en_US" />
+		<meta property="og:site_name" content="CsharpExplorer" />
+		<meta property="og:image" content="https://CsharpExplorer.com.br/images/gitcommand.png" />
+		<!-- Twitter Meta Tags -->
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content="CsharpExplorer" />
+		<meta
+			name="twitter:description"
+			content="CsharpExplorer: Encontre os comandos c# certos de que você precisa, sem procurar na Web!"
+		/>
+		<meta name="twitter:image:src" content="https://CsharpExplorer.com.br/images/gitcommand.png" />
+		<meta name="twitter:site" content="CsharpExplorer" />
+		<meta name="twitter:creator" content="CsharpExplorer" />
+
+		<link rel="manifest" href="/manifest.json" />
+		<title>C# Explorer</title>
+				<link rel="stylesheet" href="~/css/selectize.css"
+							asp-fallback-href="~/css/selectize.css"
+							asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
+				<link rel="stylesheet" href="~/css/selectize.css" asp-append-version="true" />
+				
+				<link rel="stylesheet" href="~/css/site.css"
+							asp-fallback-href="~/css/site.css"
+							asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
+				<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+	</head>
+	<body>
+		<div id="corpo" class="home dark">
+			<header>
+				@{
+    				await Html.RenderPartialAsync("_Nav");
+				}	
+			</header>
+			<div class="container home__container">
+				<div class="content">
+					<div class="row">
+						@RenderBody()
+					</div>
+				</div>
+				@{
+    				await Html.RenderPartialAsync("_Footer");
+				}		
+			</div>  
+		</div>
+		<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+		<script src="~/js/selectize.js" asp-append-version="true"></script>
+		<script async type="module" src="~/js/selectizeCustomConfig.js" asp-append-version="true"></script>
+		<script async type="module" src="~/js/site.js" asp-append-version="true"></script>
+
+		@RenderSection("Scripts", required: false)
+	</body>
+</html>

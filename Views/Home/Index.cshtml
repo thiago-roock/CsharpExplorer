@@ -1,0 +1,52 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<div class="col-5">
+  <h2 class="content__title  dark-white">
+     C# <span>Commands</span> Explorer
+  </h2>
+  <p class="content__subtitle dark-grey">
+    Encontre os comandos c# certos de que você precisa, sem procurar na Web!
+  </p>
+  <div class="options">
+    <h4 class="options__title">Procurar:</h4>
+   <Select
+                    placeholder="..."
+                    class="options-select"
+                    id="procurar"
+
+    >
+    </Select>
+
+  </div>
+</div>
+
+<div class="col-7 boards">
+    <div class="board__group board__group--1">
+      <h2 class="board__title  dark-white">Para usar:</h2>
+        <div class="board board--1">
+          <pre id="usage">
+
+          </pre>
+                <div class="copy">
+                                  <span class="copy__popover" >
+                                    Comando Copiado!
+                                  </span>
+                                  <img
+                                    class="copy__image"
+                                    src="~/images/clipboard.svg"
+                                    alt="Clipboard"
+                                  />
+                    </div>
+        </div>
+    </div>
+
+      <div id="board-descricao" class="board__group board__group--2 d-none">
+        <h2 class="board__title  dark-white">Descrição:</h2>
+          <div class="board board--2">
+            <pre id="descricao">
+               
+            </pre>
+          </div>
+      </div>
+</div>
