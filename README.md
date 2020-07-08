@@ -1,5 +1,7 @@
 # Csharp Explorer
 
+<img src="https://github.com/RDPodcasting/CsharpExplorer/blob/master/diagram.svg"></img>
+
 Encontre os comandos c# certos de que você precisa, sem procurar na Web!
 
 <img src="https://www.code-inspector.com/project/10677/score/svg"></img>
