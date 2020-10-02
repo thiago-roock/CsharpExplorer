@@ -1,4 +1,4 @@
-# Csharp Explorer
+# Csharp Explorer ![CodeQL](https://github.com/RDPodcasting/CsharpExplorer/workflows/CodeQL/badge.svg)
 
 <img src="https://github.com/RDPodcasting/CsharpExplorer/blob/master/diagram.svg"></img>
 
